@@ -1,0 +1,55 @@
+@font-face {
+  font-family: marvel;
+  src: url("font/Marvel-Regular.ttf");
+}
+
+.root {
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  display: flex;
+  flex-direction: row;
+  background-image: url(superheros/marvel-comics-avengers-universe-cinema-Super-hero-backgrounds-High-quality-Computer-print-birthday-backdrops.jpg);
+  border: 5px black solid;
+}
+
+#header {
+  color: white;
+  font-family: marvel;
+  background-color: red;
+  font-size: 100px;
+  height: 250px;
+  text-align: center;
+  border: black solid 5px;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.image {
+  border-radius: 20px;
+  flex-wrap: wrap;
+  height: 236px;
+  width: 236px;
+  border: 5px black solid;
+  background-image: 100%;
+}
+
+@media (max-width: 520px) {
+  #main {
+    display: flex;
+    flex-direction: column;
+    min-width: 480px;
+  }
+  #header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .image {
+    height: 160px;
+    width: 160px;
+  }
+}
